@@ -2,7 +2,7 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 
-const config = require('../next.config');
+const config = require("../next.config");
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {

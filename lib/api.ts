@@ -35,11 +35,11 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
   });
 
-  // replace image
+  // Replace image
   let itemStr = JSON.stringify(items);
   itemStr = itemStr.replaceAll(/\$\{basePath\}/gi, config.basePath);
   items = JSON.parse(itemStr)
-  
+
   return items;
 }
 
